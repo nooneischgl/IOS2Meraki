@@ -41,7 +41,8 @@ python configureMerakiSW.py -orgID <MerakiOrgID> -networkName <MerakiNetworkName
 - API Key - `export MERAKI_DASHBOARD_API_KEY=<YOUR_KEY_HERE>`
 - SSH username - `export SSH_USERNAME=<SSH_USERNAME>`
 - SSH Password - `export SSH_PASSWORD=<SSH_PASSWORD>`
-    - In windows use `set` instead of export 
+    - In windows CLI use `set` instead of export
+    - In Windows Power Shell use `$Env:` instead of export 
 
 **Create / Update Switch List CSV**
 - Add Switch (or Switch Stack) IPs to the switchList.csv (no other information needed)
