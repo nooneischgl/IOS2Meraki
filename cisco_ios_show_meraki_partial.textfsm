@@ -1,0 +1,11 @@
+Value Key SWITCH_NUMBER (\d+)
+Value PID (\S+)
+Value SERIAL_NUMBER (\S+)
+Value MERAKI_ID (\S+)
+
+Start
+  ^Switch\s+Serial\s+Serial
+  ^Num\s+PID\s+Number 
+  ^\s*-+ 
+  ^${SWITCH_NUMBER}\s+${PID}\s+${SERIAL_NUMBER}\s+${MERAKI_ID} -> Record
+
